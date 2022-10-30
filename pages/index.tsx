@@ -59,7 +59,7 @@ const Home: NextPage = () => {
       //ネットワークの確認
       let chainId = await ethereum.request({ method: "eth_chainId" });
       console.log("Connected to chain " + chainId);
-      const polygonChainId = "137";
+      const polygonChainId = "0x89";
       if (chainId !== polygonChainId) {
         alert("You are not connected to the Polygon Network!");
       }
